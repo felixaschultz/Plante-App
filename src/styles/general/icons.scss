@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
 
     &.--back{
-        background-image: url("icons_images/love.svg");
+        background-image: url("icons_images/reverse.svg");
     }
 
     &.--del {
@@ -23,10 +23,10 @@
     }
     
     &.--trophy {
-        background-image: url("icons_images/del.svg");
+        background-image: url("icons_images/trophy.svg");
     }
     
     &.--star {
-        background-image: url("icons_images/del.svg");
+        background-image: url("icons_images/star.svg");
     }
 }
