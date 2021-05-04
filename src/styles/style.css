@@ -20,6 +20,7 @@
   height: 50px;
   border-radius: 50%;
   display: inline-block;
+  border: none;
 }
 
 .loadingScreen {
