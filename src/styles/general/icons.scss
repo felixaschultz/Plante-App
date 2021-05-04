@@ -1,9 +1,18 @@
-.--heart {
-    background: url("icons_images/love.svg");
-    background-size: contain;
-}
+.icon{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.--del {
-    background: url("icons_images/del.svg");
+    background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
+    &.--heart {
+        background-image: url("icons_images/love.svg");
+    }
+    
+    &.--del {
+        background-image: url("icons_images/del.svg");
+    }
 }

@@ -1,25 +1,17 @@
-.icon {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
+.--heart {
+  background: url("icons_images/love.svg");
   background-size: contain;
-  background-repeat: no-repeat;
 }
-.icon.--heart {
-  background-image: url("icons_images/love.svg");
-}
-.icon.--del {
-  background-image: url("icons_images/del.svg");
+
+.--del {
+  background: url("icons_images/del.svg");
+  background-size: contain;
 }
 
 .btn {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  display: inline-block;
 }
 
 .loadingScreen {

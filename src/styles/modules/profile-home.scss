@@ -1,5 +1,5 @@
-@use "../general/fonts.scss";
-@use "../general/colors.scss";
+@use "../general" as *;
+
 
 .profileHome{
     width: 359px;
