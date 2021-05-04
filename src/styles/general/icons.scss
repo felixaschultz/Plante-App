@@ -8,11 +8,24 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+
+    &.--back{
+        background-image: url("icons_images/love.svg");
+    }
+
+    &.--del {
+        background-image: url("icons_images/del.svg");
+    }
+
     &.--heart {
         background-image: url("icons_images/love.svg");
     }
     
-    &.--del {
+    &.--trophy {
+        background-image: url("icons_images/del.svg");
+    }
+    
+    &.--star {
         background-image: url("icons_images/del.svg");
     }
 }

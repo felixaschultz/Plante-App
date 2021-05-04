@@ -1,7 +1,7 @@
 @use "icons";
 .btn{
-    width: 50px;
-    height: 50px;
+    width: 59px;
+    height: 59px;
     border-radius: 50%;
     display: inline-block;
     border: none;
@@ -11,4 +11,14 @@
         width: 103px;
         height: 103px;
     }
+
+    &.--small{
+        width: 41px;
+        height: 41px;
+    }
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    
 }

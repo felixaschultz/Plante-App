@@ -8,18 +8,40 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-.icon.--heart {
+.icon.--back {
   background-image: url("icons_images/love.svg");
 }
 .icon.--del {
   background-image: url("icons_images/del.svg");
 }
+.icon.--heart {
+  background-image: url("icons_images/love.svg");
+}
+.icon.--trophy {
+  background-image: url("icons_images/del.svg");
+}
+.icon.--star {
+  background-image: url("icons_images/del.svg");
+}
 
 .btn {
-  width: 50px;
-  height: 50px;
+  width: 59px;
+  height: 59px;
   border-radius: 50%;
   display: inline-block;
   border: none;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.47);
+}
+.btn.--large {
+  width: 103px;
+  height: 103px;
+}
+.btn.--small {
+  width: 41px;
+  height: 41px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
 }
