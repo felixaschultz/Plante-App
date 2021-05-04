@@ -6,4 +6,9 @@
     display: inline-block;
     border: none;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, .47);
+
+    &.--large{
+        width: 103px;
+        height: 103px;
+    }
 }
