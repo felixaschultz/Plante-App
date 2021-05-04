@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design system example</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Oxygen:wght@300;400;700&display=swap">    
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="styleguide.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#colors" class="menu__link">Colors</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#buttons" class="menu__link">Buttons</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#profile" class="menu__link">Module</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="module" id="colors">
+        <h2 class="title">Colors</h2>
+        <section class="module__list">
+            <article class="colors primary-color">
+                <section>
+                    <h3>Military Green</h3>
+                    <h3>#8e956e</h3>
+                </section>
+            </article>
+            <article class="colors secondary-color">
+                <section>
+                    <h3>Secondary color</h3>
+                    <h3>#6e9095</h3>
+                </section>
+            </article>
+            <article class="colors bg-color">
+                <section>
+                    <h3>Background color</h3>
+                    <h3>#e4e4e4</h3>
+                </section>
+            </article>
+            <article class="colors">
+                <section>
+                    <h3 class="fontColorPrimary">Font color Primary</h3>
+                    <h3>#000</h3>
+                </section>
+            </article>
+            <article class="colors">
+                <section>
+                    <h3 class="fontColorSecondary">Font color Secondary</h3>
+                    <h3>#fff</h3>
+                </section>
+            </article>
+        </section>
+    </section>
+    <section class="module" id="buttons">
+        <h2 class="title">Buttons</h2>
+        <a href="" class="navigation__item --like"><i class="icons heart"></i></a>
+        <a href="" class="navigation__item --like"><i class="icons del"></i></a>
+    </section>
+    <section class="module" id="profile">
+        <h2 class="title">Module</h2>
+        <article class="frontProfile">
+            <img class="frontProfile__image" src="https://lh3.googleusercontent.com/proxy/QYOoVBs_g__DsL7ZFA7qwmwOeIFEKkKb_QIYaZkm-B5iOfSA9f1Vvc9d-DqdZ2BGfDR9zpQQFY9R48U3oYm45UVvXJS_4Pt-xxQW-OYV7ZOc6mfAGh4u8FmPVSuaRNr73cP-6dgkkgEoARTJqU023tQ0ZqvVVd16wA8XNzAlVfLYWzKpKgxsFx0Pv_sIpaRZXjchAinkbtydxgmDg9ipjLwJHNuTXjo-bzfj4xflgVRx" alt="Profile Image">
+            <h2 class="frontProfile__title">Profile Module</h2>
+            <p class="frontProfile__description">description</p>
+        </article>
+        <section>
+            <article class="messeges">
+                <img class="messeges__image" src="https://lh3.googleusercontent.com/proxy/QYOoVBs_g__DsL7ZFA7qwmwOeIFEKkKb_QIYaZkm-B5iOfSA9f1Vvc9d-DqdZ2BGfDR9zpQQFY9R48U3oYm45UVvXJS_4Pt-xxQW-OYV7ZOc6mfAGh4u8FmPVSuaRNr73cP-6dgkkgEoARTJqU023tQ0ZqvVVd16wA8XNzAlVfLYWzKpKgxsFx0Pv_sIpaRZXjchAinkbtydxgmDg9ipjLwJHNuTXjo-bzfj4xflgVRx" alt="Profile Image">
+                <section>
+                    <p class="messeges__name">Profile Navn</p>
+                    <p class="messeges__description">description</p>
+                </section>
+            </article>
+            <pre>
+                &lt;article class="messeges"&gt;
+                    &lt;img class="messeges__image" src="https://lh3.googleusercontent.com/proxy/QYOoVBs_g__DsL7ZFA7qwmwOeIFEKkKb_QIYaZkm-B5iOfSA9f1Vvc9d-DqdZ2BGfDR9zpQQFY9R48U3oYm45UVvXJS_4Pt-xxQW-OYV7ZOc6mfAGh4u8FmPVSuaRNr73cP-6dgkkgEoARTJqU023tQ0ZqvVVd16wA8XNzAlVfLYWzKpKgxsFx0Pv_sIpaRZXjchAinkbtydxgmDg9ipjLwJHNuTXjo-bzfj4xflgVRx" alt="Profile Image"&gt;
+                    &lt;section&gt;
+                        &lt;p class="messeges__name"&gt;Profile Navn&lt;/p&gt;
+                        &lt;p class="messeges__description"&gt;description&lt;/p&gt;
+                    &lt;/section&gt;
+                &lt;/article&gt;
+            </pre>
+        </section>
+    </section>
+</body>
+</html>

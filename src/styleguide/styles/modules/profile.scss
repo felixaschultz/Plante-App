@@ -1,0 +1,35 @@
+@use '../general/colors.scss' as *;
+
+.frontProfile{
+    width: 400px;
+    height: 561px;
+    background: $primary;
+    border-radius: 10px;
+    position: relative;
+
+    &__image{
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: 0;
+        opacity: .7;
+    }
+
+    &__title{
+        position: absolute;
+        z-index: 1;
+        bottom: 25px;
+        left: 10px;
+        color: $fontColor-secondary;
+    }
+
+    &__description{
+        position: absolute;
+        z-index: 1;
+        bottom: 10px;
+        left: 10px;
+        color: $fontColor-secondary;
+    }
+}
