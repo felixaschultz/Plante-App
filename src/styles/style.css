@@ -98,7 +98,9 @@ body {
 }
 
 .profileHome {
-  width: 100%;
+  margin: auto;
+  width: 349px;
+  max-width: 100%;
   height: 610px;
   background: #73C700;
   padding: 15px;
@@ -145,6 +147,7 @@ body {
 }
 .profileHome.--expand .profileHome__Info, .profileHome.--expand .profileHome__name, .profileHome.--expand .profileHome__description {
   padding: 15px;
+  margin: 0;
 }
 .profileHome.--expand .profileHome__Info {
   visibility: visible;
