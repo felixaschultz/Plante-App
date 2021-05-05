@@ -35,6 +35,11 @@
         color: #fff;
     }
 
+    &__Info{
+        visibility: hidden;
+        display: none;
+    }
+
     &.--expand{
         width: 100%;
         position: absolute;
@@ -44,9 +49,20 @@
         border-radius: inherit;
         z-index: 200;
         transition: all 1s ease-in-out;
+        padding: 0;
+    }
+
+    &.--expand &__Info, &.--expand &__name, &.--expand &__description{
+        padding: 15px;
+    }
+
+    &.--expand &__Info{
+        visibility: visible;
+        display: block;
     }
 
     &.--expand &__image{
-        height: 60%;
+        height: 100%;
+        position: relative;
     }
 }

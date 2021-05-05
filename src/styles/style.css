@@ -128,6 +128,10 @@ body {
   margin: 0.3em 0em;
   color: #fff;
 }
+.profileHome__Info {
+  visibility: hidden;
+  display: none;
+}
 .profileHome.--expand {
   width: 100%;
   position: absolute;
@@ -137,9 +141,18 @@ body {
   border-radius: inherit;
   z-index: 200;
   transition: all 1s ease-in-out;
+  padding: 0;
+}
+.profileHome.--expand .profileHome__Info, .profileHome.--expand .profileHome__name, .profileHome.--expand .profileHome__description {
+  padding: 15px;
+}
+.profileHome.--expand .profileHome__Info {
+  visibility: visible;
+  display: block;
 }
 .profileHome.--expand .profileHome__image {
-  height: 60%;
+  height: 100%;
+  position: relative;
 }
 
 body {
