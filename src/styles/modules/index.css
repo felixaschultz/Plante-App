@@ -1,30 +1,85 @@
-.--heart {
-  background: url("icons_images/love.svg");
-  background-size: contain;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.--del {
-  background: url("icons_images/del.svg");
+.icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon.--back {
+  background-image: url("icons_images/reverse.svg");
+}
+.icon.--del {
+  background-image: url("icons_images/del.svg");
+}
+.icon.--heart {
+  background-image: url("icons_images/love.svg");
+}
+.icon.--trophy {
+  background-image: url("icons_images/trophy.svg");
+}
+.icon.--star {
+  background-image: url("icons_images/star.svg");
 }
 
 .btn {
-  width: 50px;
-  height: 50px;
+  width: 59px;
+  height: 59px;
   border-radius: 50%;
+  display: inline-block;
+  border: none;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.47);
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.btn.--large {
+  width: 103px;
+  height: 103px;
+}
+.btn.--medium {
+  top: 15px;
+}
+.btn.--small {
+  width: 41px;
+  height: 41px;
+  top: -15px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 .loadingScreen {
-  width: 100%;
-  height: 100%;
+  background-color: #73C700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
   position: absolute;
-  background: #8e956e;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  padding: 15px;
+}
+.loadingScreen__logo {
+  width: 80%;
 }
 
 .profileHome {
   width: 359px;
   height: 546px;
-  background: #8e956e;
+  background: #73C700;
   padding: 15px;
   border-radius: 20px;
   display: flex;

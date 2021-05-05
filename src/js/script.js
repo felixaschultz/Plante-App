@@ -1,4 +1,4 @@
-document.querySelector('button').onclick = function sendIdentification() {
+/* document.querySelector('button').onclick = function sendIdentification() {
     const files = [...document.querySelector('input[type=file]').files];
     const promises = files.map((file) => {
       return new Promise((resolve, reject) => {
@@ -44,4 +44,14 @@ document.querySelector('button').onclick = function sendIdentification() {
       });
     })
   
-};
+}; */
+
+function loadingScreen(){
+    if(window.location.href.indexOf("app/index.html") > -1){
+        setTimeout(function(){
+            document.querySelector(".loadingScreen").style.top = "-100%";
+        }, 5000)
+    }
+}
+
+loadingScreen();
