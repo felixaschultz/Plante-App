@@ -80,3 +80,15 @@
   margin: 0.3em 0em;
   color: #fff;
 }
+
+body {
+  background-color: #8e956e;
+}
+
+.frontpage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}

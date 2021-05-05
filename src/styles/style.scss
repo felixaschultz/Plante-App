@@ -1,1 +1,14 @@
 @use "modules" as *;
+@use "general" as *;
+
+body{
+    background-color: $primary;
+}
+
+.frontpage{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
