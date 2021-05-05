@@ -6,19 +6,27 @@
     display: inline-block;
     border: none;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, .47);
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
 
     &.--large{
         width: 103px;
         height: 103px;
     }
 
+    &.--medium{
+        top: 15px;
+    }
+
     &.--small{
         width: 41px;
         height: 41px;
+        top: -15px;
     }
 }
 .nav{
     display: flex;
-    justify-content: center;
-    
+    justify-content: space-around;
+    align-items: flex-end;
 }
