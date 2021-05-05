@@ -1,3 +1,11 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -39,6 +47,7 @@ body {
   border-radius: 50%;
   display: inline-block;
   border: none;
+  background: white;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.47);
   padding: 10px;
   box-sizing: border-box;
@@ -56,14 +65,13 @@ body {
   height: 41px;
   top: -15px;
 }
-
-.nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+.btn.--headerNav {
+  box-shadow: none;
+  background: transparent;
 }
 
 .loadingScreen {
+  top: 0;
   background-color: #73C700;
   display: flex;
   justify-content: center;
@@ -75,13 +83,14 @@ body {
   transition: all 0.5s ease-in-out;
   width: 100%;
   padding: 15px;
+  z-index: 1001;
 }
 .loadingScreen__logo {
   width: 80%;
 }
 
 .profileHome {
-  width: 359px;
+  width: 100%;
   height: 546px;
   background: #73C700;
   padding: 15px;
@@ -110,4 +119,20 @@ body {
 
 body {
   font-family: "Helvetica Neue", Arial, Sans-serif;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr;
+  grid-template-columns: 1fr;
+  padding: 15px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

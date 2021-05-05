@@ -5,6 +5,7 @@
     border-radius: 50%;
     display: inline-block;
     border: none;
+    background: rgba(255,255,255, 1);
     box-shadow: 0px 3px 6px rgba(0, 0, 0, .47);
     padding: 10px;
     box-sizing: border-box;
@@ -24,9 +25,9 @@
         height: 41px;
         top: -15px;
     }
-}
-.nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+
+    &.--headerNav{
+        box-shadow: none;
+        background: transparent;
+    }
 }
