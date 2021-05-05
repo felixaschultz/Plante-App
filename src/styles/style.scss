@@ -23,17 +23,18 @@ body{
 }
 
 .messages{
-    right: -100%;
+    left: -100%;
     position: absolute;
     background: #fff;
     top: 0;
     width: 100%;
     height: 100vh;
+    z-index: 200;
     transition: all .5s ease-in-out;
 }
 
 .messages.--expand{
-    right: 0;
+    left: 0;
     z-index: 200;
     transition: all 1s ease-in-out;
 }
