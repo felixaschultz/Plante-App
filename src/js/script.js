@@ -54,4 +54,8 @@ function loadingScreen(){
     }
 }
 
+document.querySelector(".profileHome").addEventListener("click", function(){
+    this.classList.toggle("--expand");
+})
+
 loadingScreen();

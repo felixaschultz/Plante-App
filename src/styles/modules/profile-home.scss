@@ -3,7 +3,7 @@
 
 .profileHome{
     width: 100%;
-    height: 546px;
+    height: 610px;
     background: $primary;
     padding: 15px;
     border-radius: 20px;
@@ -13,6 +13,7 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.753);
+    transition: all .5s ease-in-out;
 
     &__image{
         width: 100%;
@@ -28,5 +29,20 @@
         z-index: 1;
         margin: .3em 0em;
         color: #fff;
+    }
+
+    &.--expand{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        left: 0;
+        border-radius: inherit;
+        z-index: 200;
+        transition: all .5s ease-in-out;
+    }
+
+    &.--expand &__image{
+        height: 60%;
     }
 }

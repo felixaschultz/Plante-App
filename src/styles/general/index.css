@@ -32,6 +32,13 @@ body {
 .icon.--star {
   background-image: url("icons_images/star.svg");
 }
+.icon.--profile {
+  background-image: url("https://scontent-uc-d2c-7.intastellar.com/a/s/ul/p/avtr46-img/profile_standard.jpg");
+}
+.icon.--message {
+  background-image: url("https://cdn.intstlr-clnts.net/nordic-taggers/icons/chat-icon.png");
+  filter: brightness(0.8);
+}
 
 .btn {
   width: 59px;
