@@ -55,7 +55,7 @@ function loadingScreenLoading(){
     if(window.location.href.indexOf("app/index.html") > -1){
         setTimeout(function(){
             loadingScreen.style.top = "-100%";
-        }, 5000)
+        }, 2000)
     }
 }
 
