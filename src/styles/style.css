@@ -119,6 +119,9 @@ body {
   left: 0;
   object-fit: cover;
 }
+.profileHome__name {
+  text-transform: uppercase;
+}
 .profileHome__name, .profileHome__description {
   position: relative;
   z-index: 1;
@@ -158,4 +161,20 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   z-index: 201;
+}
+
+.messages {
+  right: -100%;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transition: all 0.5s ease-in-out;
+}
+
+.messages.--expand {
+  right: 0;
+  z-index: 200;
+  transition: all 1s ease-in-out;
 }

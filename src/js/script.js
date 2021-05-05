@@ -46,16 +46,25 @@
   
 }; */
 
-function loadingScreen(){
+const messages = document.querySelector(".messages");
+const loadingScreen = document.querySelector(".loadingScreen");
+const profile = document.querySelector(".profileHome");
+const messageBTN = document.querySelector(".--messNav");
+
+function loadingScreenLoading(){
     if(window.location.href.indexOf("app/index.html") > -1){
         setTimeout(function(){
-            document.querySelector(".loadingScreen").style.top = "-100%";
+            loadingScreen.style.top = "-100%";
         }, 5000)
     }
 }
 
-document.querySelector(".profileHome").addEventListener("click", function(){
+profile.addEventListener("click", function(){
     this.classList.toggle("--expand");
 })
 
-loadingScreen();
+messageBTN.addEventListener("click", function(){
+    messages.classList.toggle("--expand"); 
+})
+
+loadingScreenLoading();

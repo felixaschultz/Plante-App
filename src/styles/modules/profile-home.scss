@@ -24,6 +24,10 @@
         object-fit: cover;
     }
 
+    &__name{
+        text-transform: uppercase;
+    }
+
     &__name, &__description{
         position: relative;
         z-index: 1;
@@ -39,7 +43,7 @@
         left: 0;
         border-radius: inherit;
         z-index: 200;
-        transition: all .5s ease-in-out;
+        transition: all 1s ease-in-out;
     }
 
     &.--expand &__image{
