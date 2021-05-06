@@ -60,6 +60,8 @@ const profile = document.querySelector(".profileHome");
 const messageBTN = document.querySelector(".--messNav");
 const image = document.querySelector(".profileHome__image");
 const tro = document.querySelector(".--click");
+const accountBTN = document.querySelector(".--accountNav");
+const account = document.querySelector(".account");
 
 tro.addEventListener("click", function(){
   document.querySelector(".trophy-Big").classList.toggle("--big");
@@ -69,6 +71,10 @@ tro.addEventListener("click", function(){
     }
   },1000);
 });
+
+accountBTN.addEventListener("click", function(){
+  account.classList.toggle("--open");
+})
 
 function loadingScreenLoading(){
     if(window.location.href.indexOf("app/index.html") > -1){

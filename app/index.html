@@ -14,7 +14,7 @@
     </section>
     <main class="content">
         <header class="header">
-            <button class="btn --headerNav"><i class="icon --profile"></i></button>
+            <button class="btn --headerNav --accountNav"><i class="icon --profile"></i></button>
             <button class="btn --headerNav --messNav"><i class="icon --message"></i></button>
         </header>
         <article class="profileHome">
@@ -91,17 +91,21 @@
             <i class="icon --trophy"></i>
         </article>
         <article class="account">
-           <section>
-            <img class="account__profile" src="../src/images/profil.jpeg" alt="profile picture">
-            <h3>Simon</h3>
-            <p>Plant entusiast</p>
-            <section>
-            <button class="btn --medium"><i class="icon --back"></i></button>
-            <button class="btn --small"><i class="icon --del"></i></button>
-            <button class="btn --large"><i class="icon --heart"></i></button>
-            </section>
+           <section class="account__info">
+                <img class="account__profile" src="../src/images/profil.jpeg" alt="profile picture">
+                <section class="account__name">
+                    <h3 class="account__nameHead">Simon</h3>
+                    <p class="account__nameHead">Plant entusiast</p>
+                </section>
+                <section class="account__btnContainer">
+                    <button class="btn --offset"><i class="icon --back"></i></button>
+                    <button class="btn --secondBG"><i class="icon --del"></i></button>
+                    <button class="btn --offset"><i class="icon --heart"></i></button>
+                </section>
            </section>
-           <button class="account__cta">Get plantmate+</button>
+           <section class="account__cta-container">
+                <button class="account__cta">Get plantmate+</button>
+           </section>
         </article>
 
 

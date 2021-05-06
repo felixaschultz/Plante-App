@@ -68,3 +68,9 @@ body {
   box-shadow: none;
   background: transparent;
 }
+.btn.--offset {
+  top: -30px;
+}
+.btn.--secondBG {
+  background-color: #73C700;
+}

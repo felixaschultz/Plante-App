@@ -1,4 +1,5 @@
 @use "icons";
+
 .btn{
     width: 59px;
     height: 59px;
@@ -29,5 +30,13 @@
     &.--headerNav{
         box-shadow: none;
         background: transparent;
+    }
+
+    &.--offset{
+        top: -30px;
+    }
+
+    &.--secondBG{
+        background-color: #73C700;
     }
 }
