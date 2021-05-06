@@ -159,11 +159,22 @@ body {
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
 }
 
+.messages__msg {
+  padding: 15px;
+}
+
+.messages__Message {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
 .profileHome {
   margin: auto;
   width: 349px;
   max-width: 100%;
-  height: 610px;
+  height: 580px;
   background: #73C700;
   padding: 15px;
   border-radius: 20px;
@@ -191,6 +202,9 @@ body {
   z-index: 1;
   margin: 0.3em 0em;
   color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .profileHome__Info {
   visibility: hidden;
@@ -206,6 +220,11 @@ body {
   z-index: 200;
   transition: all 1s ease-in-out;
   padding: 0;
+}
+.profileHome.--expand .profileHome__description {
+  overflow-y: scroll;
+  text-overflow: initial;
+  white-space: unset;
 }
 .profileHome.--expand .profileHome__Info, .profileHome.--expand .profileHome__name, .profileHome.--expand .profileHome__description {
   padding: 15px;
@@ -239,4 +258,19 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   z-index: 201;
+}
+
+.trophy-Big {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  display: none;
+  z-index: 2000;
+}
+.trophy-Big.--big {
+  display: block;
 }

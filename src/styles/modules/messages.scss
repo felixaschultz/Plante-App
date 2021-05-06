@@ -68,9 +68,13 @@
     }
 }
 
+.messages__msg{
+    padding: 15px;
+}
 
-.messages__container{
-    display: flex;
-    flex-direction:row-reverse;
-
+.messages__Message{
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+    gap: 10px;
 }
