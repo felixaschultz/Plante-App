@@ -1,7 +1,125 @@
-body {
-  background-color: #c4c4e2;
+/* 
+Eric Meyer's CSS Reset
+http://meyerweb.com/eric/tools/css/reset/
+v1.0 | 20080212
+CSSresetr
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.menu {
+  text-align: right;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu__link {
+  display: block;
+  padding: 0.5rem 2rem;
+  color: #0e0e0e;
+  text-decoration: none;
+}
+
+.menu__link:hover, .menu__link.--active {
+  color: #ad1f1f;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+}
+
+.menu__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100vw;
+  padding: 1rem 2rem;
+  background-color: #ebebeb;
+  margin: 0 0 1rem 0;
+  min-width: 300px;
+  justify-items: center;
+}
+
+.menu__item {
+  display: block;
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+
+.heart {
+  background: url("icons_images/love.svg");
+  background-size: contain;
+}
+
+.del {
+  background: url("icons_images/del.svg");
+  background-size: contain;
+}
+
+/* this enables the usage of all variables and mixins from the general folder */
+body {
+  background-color: #dfdfdf;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin: 15px 0px;
 }
 
 .menu {
@@ -61,7 +179,7 @@ body {
 }
 
 .primary-color {
-  background-color: #8e956e;
+  background-color: #73C700;
 }
 
 .bg-color {

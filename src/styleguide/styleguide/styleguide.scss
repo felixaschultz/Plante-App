@@ -1,8 +1,13 @@
-@use '../styles/general/colors.scss' as *;
+@use "../styles/general" as *;
+
 body {
-    background-color: rgb(196, 196, 226);
+    background-color: rgb(223, 223, 223);
     margin: 0;
     padding: 0;
+}
+
+.title{
+    margin: 15px 0px;
 }
 
 .menu {
@@ -63,7 +68,7 @@ body {
 }
 
 .primary-color{
-    background-color: $primary;
+    background-color: #73C700;
 }
 
 .bg-color{
