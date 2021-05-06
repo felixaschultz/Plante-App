@@ -1,5 +1,5 @@
-/* document.querySelector('button').onclick = function sendIdentification() {
-    const files = [...document.querySelector('input[type=file]').files];
+function sendIdentification() {
+    const files = [document.querySelector(".profileHome__image").src];
     const promises = files.map((file) => {
       return new Promise((resolve, reject) => {
           const reader = new FileReader();
@@ -8,16 +8,18 @@
             console.log(res);
             resolve(res);
           }
+          file = URL.createObjectURL(file);
+          console.log(file);
+
           reader.readAsDataURL(file)
       })
     })
     
     Promise.all(promises).then((base64files) => {
-      console.log(base64files)
             
       const data = {
         api_key: "iF01Etqb3LEywM5G0TCH4ikp8MZPTH3kLm5jQs7Hs6DSOXjdZV",
-        images: base64files,
+        images: document.querySelector(".profileHome__image").src,
         modifiers: ["crops_fast", "similar_images"],
         plant_language: "en",
         plant_details: ["common_names",
@@ -38,13 +40,16 @@
       .then(response => response.json())
       .then(data => {
         console.log('Success:', data);
+        const body = document.querySelector(".profileHome__Info--text");
+
+
       })
       .catch((error) => {
         console.error('Error:', error);
       });
     })
   
-}; */
+};
 
 const messages = document.querySelector(".messages");
 const loadingScreen = document.querySelector(".loadingScreen");
@@ -61,6 +66,7 @@ function loadingScreenLoading(){
 
 profile.addEventListener("click", function(){
     this.classList.toggle("--expand");
+    sendIdentification();
 })
 
 messageBTN.addEventListener("click", function(){
