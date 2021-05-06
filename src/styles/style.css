@@ -48,6 +48,9 @@ body {
   background-image: url("https://cdn.intstlr-clnts.net/nordic-taggers/icons/chat-icon.png");
   filter: brightness(0.8);
 }
+.icon.--camera {
+  background-image: url("icons_images/camera.svg");
+}
 
 .btn {
   width: 59px;
