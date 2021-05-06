@@ -41,4 +41,12 @@
     &.--camera{
         background-image: url("icons_images/camera.svg");
     }
+
+    &.--gallery{
+        background-image: url("icons_images/gallery.svg");
+    }
+
+    &.--edit{
+        background-image: url("icons_images/pen.svg");
+    }
 }
